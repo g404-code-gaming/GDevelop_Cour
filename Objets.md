@@ -38,3 +38,6 @@ Lorsque tu as trouvé un objet qui te plait, clique dessus. Tu va alors avoir de
 C'est y est !!! l'objet est désormais dans ta liste d'objet. Tu peut désormais l'ajouter à ta scène autant de fois que tu le souhaite. 
 
 ![Zelda](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/panneau_des_objets_7.JPG)
+
+Et voilà !! 
+Maintenant que tu sais ajouter des objets sur ta scène, tu peut commencer à construire son niveau comme tu le désire.
