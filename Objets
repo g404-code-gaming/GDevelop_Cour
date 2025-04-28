@@ -1,0 +1,36 @@
+#Objets dans GDevelop 5
+
+Dans GDevelop, on des objets pour construire le jeu. 
+
+Les objets disponibles pour le projet peuvent être trouvé dans la fenêtre des objets : 
+
+--insérer image fenetre objet ici
+
+Au début du projet, la fenêtre est vide : il n'y a rien dedans. Pas de panique ! nous pouvons ajouter nos propres objets.
+
+##Ajouter un objet
+
+Pour ajouter un objet, on clique ici.
+
+Puis, on a deux choix : 
+    -Ajouter un objet à partir du magasin.
+    -Ajouter un objet à partir de 0. Cette méthode n'est pas conseillée pour débuter, nous l'aborderons plus tard.
+
+##Ajouter un objet à partir du magasin
+
+Lorsque tu choisie l'option **ajouter un objet à partir du magasin**, tu peut choisir des catégories, qui vont te proposer plusieurs objets différents.
+
+(ajouter fenêtre catégorie)
+
+Envis d'un objet en particulier ? Tu peut faire une recherche d'objet. Il faut écrire le nom de l'objet **en anglais**. Le magasin va alors te proposer une liste d'objet qui ont un rapport avec ce que tu as écrit.
+Si tu n'est pas très fort en anglais, tu peut utiliser [Google traduction](https://translate.google.fr/?hl=fr).
+
+(ajouter fenêtre objet recherche)
+
+Lorsque tu as trouvé un objet qui te plait, clique dessus. Tu va alors avoir des informations supplémentaire dessus. Si l'objet te convient, u peut l'ajouter à ta scène. 
+
+(ajouter objet ajouter)
+
+C'est y est !!! l'objet est désormais dans ta liste d'objet. Tu peut désormais l'ajouter à ta scène autant de fois que tu le souhaite. 
+
+(ajouter objet sur la scène)
