@@ -1,4 +1,4 @@
-#Objets dans GDevelop 5
+# Objets dans GDevelop 5
 
 Dans GDevelop, on des objets pour construire le jeu. 
 
@@ -20,7 +20,7 @@ Puis, on a deux choix :
 
 ![Zelda](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/panneau_des_objets_3.JPG)
 
-##Ajouter un objet à partir du magasin
+## Ajouter un objet à partir du magasin
 
 Lorsque tu choisie l'option **ajouter un objet à partir du magasin**, tu peut choisir des catégories, qui vont te proposer plusieurs objets différents.
 
