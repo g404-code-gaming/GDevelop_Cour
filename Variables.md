@@ -46,12 +46,10 @@ Il existes plusieurs types de valeurs pour les variables :
    
 ## Vérifier / Modifier une variable 
 
-Dans les [évènements](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/%C3%A9v%C3%A8nements.md), ont peut accéder aux variables pour vérifier leurs valeurs ou les modifiers.
+Dans les [évènements](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/%C3%A9v%C3%A8nements.md), on peut accéder aux variables pour vérifier leurs valeurs ou les modifier.
 
-Condition : **Valeur d'une variable**
+Condition : Valeur d'une variable
 
-Action : **Changer la valeur d'une variable**
+Action : Changer la valeur d'une variable
 
-Les paramètres d'une condition/action incluant une variable varient en fonction de son type.
-
-## Appeler une variable 
+Les paramètres d’une condition ou d’une action incluant une variable varient en fonction du type de cette variable.
