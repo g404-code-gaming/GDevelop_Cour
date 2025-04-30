@@ -1,12 +1,13 @@
 # Objets dans GDevelop 5
 
-Dans GDevelop, on des objets pour construire le jeu. 
+Dans GDevelop, on utilise des objets pour construire le jeu. 
 
-Les objets disponibles pour le projet peuvent être trouvé dans la fenêtre des objets : 
+Les objets disponibles pour le projet peuvent être trouvés dans la fenêtre des objets : 
 
 ![Zelda](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/panneau_des_objets_1.JPG)
 
-Au début du projet, la fenêtre est vide : il n'y a rien dedans. Pas de panique ! nous pouvons ajouter nos propres objets.
+Au début du projet, la fenêtre est vide : il n'y a rien dedans. 
+Pas de panique ! nous pouvons ajouter nos propres objets.
 
 ## Ajouter un objet
 
