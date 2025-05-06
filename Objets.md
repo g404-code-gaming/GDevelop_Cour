@@ -23,10 +23,6 @@ Puis, on a deux choix :
 
 ### Ajouter un objet à partir du magasin
 
-Lorsque tu choisie l'option **ajouter un objet à partir du magasin**, tu peut choisir des catégories, qui vont te proposer plusieurs objets différents.
-
-![Zelda](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/panneau_des_objets_4.JPG)
-
 Envis d'un objet en particulier ? Tu peut faire une recherche d'objet. Il faut écrire le nom de l'objet **en anglais**. Le magasin va alors te proposer une liste d'objet qui ont un rapport avec ce que tu as écrit.
 Si tu n'est pas très fort en anglais, tu peut utiliser [Google traduction](https://translate.google.fr/?hl=fr).
 
