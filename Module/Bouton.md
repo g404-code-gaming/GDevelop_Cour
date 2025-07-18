@@ -27,7 +27,7 @@ Nous faisons donc deux conditions pour chacun de ces prérequis :
 ![image 5](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/bouton_5.JPG)
 
 Désormais, nous avons nos deux conditions. 
-Ajouter l'action.
+Ajoutez l'action.
 
 ![image 6](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/bouton_6.JPG)
 
