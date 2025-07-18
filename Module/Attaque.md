@@ -42,7 +42,7 @@ L'action consiste à faire apparaître un projectile, puis à lui appliquer une 
 Commençons par l'action de création du projectile :  
 Pour qu'il apparaisse sur le personnage, on utilise sa position X et Y comme référence. 
 
-![image 9](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_9.JPG)
+![image 9](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_9.jpg)
 
 Ensuite, ajoutons l'action qui applique une force au projectile :  
 On choisit de déplacer le projectile uniquement sur l'axe X, afin qu'il avance vers la droite.
