@@ -14,7 +14,7 @@ Dans l'évènement préfait possédant pour condition '*au lancement de la scèn
 
 On va initialiser un chronomètre d'attaque pour le personnage. Ce chronomètre va permettre de savoir s'il peut attaquer ou non (sinon, il va attaquer à l'infini, et ce n'est pas ce qu'on veut). 
 
-![image 3](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_3.jpg)
+![image 3](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_3.JPG)
 
 Maintenant, créez un nouvel évènement. 
 
