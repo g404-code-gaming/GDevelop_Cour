@@ -1,58 +1,73 @@
-# Attaque
+# 🗡️ Attaque au corps à corps avec animation d'épée
 
-Dans ce module, nous allons montrer comment attaquer avec le personnage en utilisant le bouton de la souris. 
+![AttaqueCAC](Images/AttaqueCAC.png)
 
-![image 1](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_1.jpg)
+## 🧰 Préparation du projet
 
-L'objectif est de permettre au personnage de tirer des projectiles lorsque le joueur appuie sur le bouton gauche de la souris. 
+- Créer un personnage joueur (`Elf_Male`) avec :
+  - Le comportement personnage se déplaçant sur des plateformes. (Pour un side scroller 2D)
+- Créer un objet `Sword` :
+  - Avec une animation de slash ou coup d’épée.
 
-Allez dans les évènements de la scène.
+---
 
-Dans l'évènement préfait possédant pour condition '*au lancement de la scène*', ajoutez une action. 
+## 🖼️ Étape 1 : Ajouter l’animation de l’épée
 
-![image 2](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_2.JPG)
+- Importer ou dessiner une animation représentant un coup d’épée.
+- S’assurer qu’elle se joue automatiquement à la création de l’objet.
 
-On va initialiser un chronomètre d'attaque pour le personnage. Ce chronomètre va permettre de savoir s'il peut attaquer ou non (sinon, il va attaquer à l'infini, et ce n'est pas ce qu'on veut). 
+![AttaqueCAC_Animation.png](Images/AttaqueCAC_Animation.png)
 
-![image 3](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_3.JPG)
+---
 
-Maintenant, créez un nouvel évènement. 
+## 🎮 Étape 2 : Déclencher l’attaque
 
-![image 4](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_4.JPG)
+- Lancer l’attaque uniquement si le bouton gauche de la souris est cliqué.
 
-Dans cet évènement, ajoutez une Condition.
+![AttaqueCAC_CodeDeclenchement.png](Images/AttaqueCAC_CodeDeclenchement.png)
 
-![image 5](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_5.JPG)
+---
 
-On souhaite que l'évènement se déclenche lorsque le bouton gauche de la souris est pressé : recherchez la condition appropriée dans la barre de recherche et choisissez le bon bouton.
+## 🕒 Étape 3 : Ajouter un cooldown
 
-![image 6](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_6.JPG)
+- Bloquer l’attaque si le **minuteur "cooldown"** est inférieur à 1 seconde.
+- Réinitialiser ce minuteur à chaque attaque.
 
-Une fois la 1ère condition faite, il faut vérifier que le personnage peut attaquer en ajoutant une nouvelle condition.  
-Celle-ci vérifie si la valeur du chronomètre est valide (ici, on peut tirer toutes les 1 secondes).
+![AttaqueCAC_CodeCooldown.png](Images/AttaqueCAC_CodeCooldown.png)
 
-![image 7](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_7.JPG)
+---
 
-Maintenant que les conditions d'attaque sont remplies, nous allons ajouter l'action. 
+## ↔️ Étape 4 : Détecter l’orientation du joueur
 
-![image 8](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_8.JPG)
+- Si le joueur va à gauche, le retourner (FlipX).
+- Si le joueur va à droite, annuler le retournement.
 
-L'action consiste à faire apparaître un projectile, puis à lui appliquer une force pour qu'il bouge vers l'avant. 
+![AttaqueCAC_CodeOrientation.png](Images/AttaqueCAC_CodeOrientation.png)
 
-Commençons par l'action de création du projectile :  
-Pour qu'il apparaisse sur le personnage, on utilise sa position X et Y comme référence. 
+---
 
-![image 9](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_9.jpg)
+## ⚔️ Étape 5 : Créer l’objet Sword selon l’orientation
 
-Ensuite, ajoutons l'action qui applique une force au projectile :  
-On choisit de déplacer le projectile uniquement sur l'axe X, afin qu'il avance vers la droite.
+- Positionner l’épée à gauche si le joueur est retourné.
+- Positionner l’épée à droite sinon.
+- Agrandir ou ajuster l’objet si besoin.
 
-![image 10](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_10.jpg)
+![AttaqueCAC_CodeCréationSword.png](Images/AttaqueCAC_CodeCréationSword.png)
 
-Il faut rajouter une dernière action : celle qui va réinitialiser le chronomètre. Ainsi, le personnage pourra attaquer à nouveau dans la prochaine seconde.
+**Attention** :  Dans mon cas le " -50 " et " +10 " correspond a un décalage afin que l'épée soit devant le player quand il tape.
 
-![image 11](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_11.jpg)
+---
 
-Et voilà, désormais, notre personnage peut attaquer en lançant des projectiles. 
+## ⏱️ Étape 6 : Supprimer l’épée après un court délai
 
-![image 12](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/attaque_12.jpg)
+- Supprimer `Sword` automatiquement après 1 seconde pour simuler un coup rapide.
+
+![AttaqueCAC_CodeSupprimer.png](Images/AttaqueCAC_CodeSupprimer.png)
+
+---
+
+## ✅ Résultat attendu
+
+Le joueur peut attaquer dans la direction où il regarde, avec une **animation temporaire d’épée**, tout en respectant un **délai entre chaque attaque**.
+
+![AttaqueCAC_CodeComplet.png](Images/AttaqueCAC_CodeComplet.png)
