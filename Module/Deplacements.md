@@ -1,41 +1,87 @@
-# Déplacement
+# 🎮 Déplacement du joueur
 
-Dans ce module, on vous montre comment déplacer un personnage de gauche à droite en utilisant une touche du clavier.
+![Deplacement.png](Images/Deplacement.png)
 
-![image 1](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/d%C3%A9placement_1.JPG)
+## 🧰 Ce qu’il faut préparer
 
-On souhaite que notre personnage se déplace lorsque le joueur appuie sur une touche spécifique. 
+- Un personnage (ex : Elf_Male)
+- Un sol ou des plateformes (ex : Sol, Bloc, etc.)
 
-Il existe des comportements qui permettent d'obtenir ce résultat facilement, mais l'objectif ici est de savoir comment faire à partir des évènements. 
+---
 
-Dans vos évènements, ajoutez un nouvel évènement. 
+## 🛠 Étape 1 : Ajouter le comportement au joueur
 
-![image 2](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/d%C3%A9placement_2.JPG)
+- Sélectionner le personnage
+- Ajouter le comportement **Personnage se déplaçant sur des plateformes**
 
-Dans ce nouvel évènement, ajoutez une condition. 
+Ce comportement permet au personnage de marcher, sauter, tomber et glisser selon les lois de la gravité.
 
-![image 3](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/d%C3%A9placement_3.JPG)
+![Deplacement_Comportement.png](Images/Deplacement_Comportement.png)
 
-La condition est la suivante : *lorsqu'une touche est pressée*. 
+---
 
-On cherche donc la condition de touche pressée dans la barre de recherche, lorsqu'elle est trouvée, il faut choisisr quelle touche ou souhaite attribué à la condition (ici, on souhaite se déplacer à droite, alors on utilise la touche Right).
+## ⚙️ Étape 2 : Paramétrer les valeurs du joueur
 
-![image 4](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/d%C3%A9placement_4.JPG)
+Tu peux configurer plusieurs paramètres :
+- Gravité
+- Vitesse maximale
+- Force du saut
+- Accélération
+- Nombre de sauts autorisés
+- Peut grimper les pentes
+- Peut tomber dans les trous
 
-Désormais, il faut ajouter la action. 
+Ces valeurs peuvent être ajustées selon le style de ton jeu (réaliste, arcade, rapide, flottant...).
 
-![image 5](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/d%C3%A9placement_5.JPG)
+![Deplacement_ComportementParametres.png](Images/Deplacement_ComportementParametres.png)
 
-L'action consiste à déplacer le personnage, c'est-à-dire à lui appliquer une force dans une direction spécifique. Puisque l'action s'applique au personnage, on clique sur lui et on cherche une action de force. 
+---
 
-Il faut choisir ensuite la vitesse à laquelle on le déplace (ici 50 sur l'axe x). 
+## 🧱 Étape 3 : Ajouter le comportement aux plateformes
 
-![image 6](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/d%C3%A9placement_6.JPG)
+- Sélectionner les objets qui serviront de sol
+- Ajouter le comportement **Plateforme**
 
-Et voilà ! nous avont une action qui permet de déplacer le personnage lorsque le joueur appuie sur la touche *Right*. 
+C’est obligatoire pour que le personnage puisse marcher dessus ou interagir avec.
 
-![image 7](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/d%C3%A9placement_7.JPG)
+![Deplacement_Plateforme.png](Images/Deplacement_Plateforme.png)
 
-Afin de compléter le module, ajoutez l'évènement qui permet de se déplacer à gauche. C'est le même, mais les actions et conditions sont légèrement différentes. 
+---
 
-![image 8](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Images_cours/d%C3%A9placement_8.JPG)
+## 🎮 Étape 4 : Utiliser les contrôles par défaut
+
+Pas besoin de coder ! Les touches suivantes fonctionnent automatiquement :
+- Flèches gauche/droite ou A/D : déplacement
+- Flèche haut ou Espace : saut
+
+Les touches peuvent être désactivées si l’on veut programmer ses propres contrôles.
+
+---
+
+## 🎭 Étape 5 : Faire tourner le personnage dans le bon sens
+
+Si ton personnage regarde toujours à droite, tu peux lui ajouter le comportement **Flippable** pour qu’il tourne selon la direction du déplacement.
+
+On peut alors utiliser des événements pour dire :
+- Si le joueur va vers la gauche, on retourne le sprite
+- Si le joueur va vers la droite, on remet le sprite à l’endroit
+
+![Deplacement_Code.png](Images/Deplacement_Code.png)
+
+---
+
+## 📌 À retenir
+
+- Le comportement "Personnage se déplaçant sur des plateformes" est essentiel pour les jeux de type Mario, Celeste, ou Hollow Knight.
+- Il fonctionne en combinaison avec le comportement "Plateforme" sur les objets du décor.
+- Il permet de gagner beaucoup de temps : pas besoin de tout coder !
+
+---
+
+## ✅ Résultat attendu
+
+Les élèves doivent être capables de :
+- Ajouter les bons comportements
+- Déplacer un personnage de gauche à droite
+- Le faire sauter correctement
+- Comprendre comment personnaliser la physique du jeu
