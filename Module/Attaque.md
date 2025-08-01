@@ -71,3 +71,53 @@
 Le joueur peut attaquer dans la direction où il regarde, avec une **animation temporaire d’épée**, tout en respectant un **délai entre chaque attaque**.
 
 ![AttaqueCAC_CodeComplet.png](Images/AttaqueCAC_CodeComplet.png)
+
+# 🎯 Attaque a distance
+
+![AttaqueADistance](Images/AttaqueADistance.png)
+
+## 🧰 Préparation du projet
+
+- Créer un objet **joueur** (`Elf_Male`) avec le comportement **Platformer**.
+- Créer un objet **projectile** (par exemple `Arrow`, `Bullet` ou `Fireball`) :
+  - Forme simple (cercle, flèche…).
+  - Animation facultative.
+
+---
+
+## 🔫 Étape 1 : Ajouter le comportement `FireBullet`
+
+- Sélectionner l’objet `Elf_Male`.
+- Cliquer sur **Ajouter un comportement** → **Fire Bullet**.
+- Paramétrer :
+  - Vitesse (ex. : 500).
+  - Nombre de balle par tir (ex. : 1).
+  - Nom du tir (facultatif si un seul type de tir).
+
+![AttaqueADistance_Comportement.png](Images/AttaqueADistance_Comportement.png)
+
+---
+
+## 🖱️ Étape 2 : Tirer en direction de la souris
+
+- Quand le **joueur clique bouton Droit**, il tire une flèche.
+- Le projectile est tiré **depuis le joueur vers la position de la souris**.
+- Le tir part du **centre du joueur** (ou légèrement devant).
+
+![AttaqueADistance_Code](Images/AttaqueADistance_Code.png)
+
+## ✅ Résultat attendu
+
+En cliquant, le joueur tire des flèches vers la souris.  
+Les projectiles se déplacent automatiquement grâce au comportement **FireBullet**.
+
+---
+
+## 🧠 À noter (pour aller plus loin)
+
+Le comportement `FireBullet` permet aussi de :
+- Tirer **dans une direction fixe** (angle).
+- Tirer avec une **précision variable** (aléatoire).
+- Ajouter des **effets visuels ou sons**.
+- Déclencher le tir avec un **timer ou une animation**.
+- Définir des **dommages et collisions** (avec un ennemi, un mur...).
