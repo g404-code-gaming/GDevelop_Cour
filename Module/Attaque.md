@@ -5,7 +5,7 @@
 ## 🧰 Préparation du projet
 
 - Créer un personnage joueur (`Elf_Male`) avec :
-  - Le comportement personnage se déplaçant sur des plateformes. (Pour un side scroller 2D)
+  - Le comportement **personnage se déplaçant sur des plateformes**. (Pour un side scroller 2D)
 - Créer un objet `Sword` :
   - Avec une animation de slash ou coup d’épée.
 
