@@ -1,5 +1,7 @@
 # 🌌 Module – Parallax Scrolling
 
+![Parralax.gif](Images/Parralax.gif)
+
 ## 🎯 Objectif
 
 Découvrir le **parallax scrolling**, comprendre comment utiliser les **calques dans GDevelop**, et apprendre à construire un décor composé de plusieurs plans (**background** et **midground**) qui se déplacent à des vitesses différentes pour donner une **impression de profondeur**.
@@ -27,6 +29,8 @@ Pour créer du parallax scrolling, on utilise :
    - Par défaut, tous les objets sont placés sur le calque `Base layer`.  
    - On peut créer d’autres calques (`Background`, `Midground`, `UI`...) pour séparer les éléments.  
    - Chaque calque peut avoir une **caméra indépendante**.
+
+![CalquesParralax.png](Images/CalquesParralax.png)
 
 2. **Les Tiled Sprites**  
    - Parfaits pour créer des arrière-plans qui se répètent à l’infini.  
@@ -61,6 +65,8 @@ Pour créer du parallax scrolling, on utilise :
 ### Exemple d’événement
 - `FarBackground` → avance à **1/8ème** de la vitesse de la caméra  
 - `MidBackground` → avance à **1/3** de la vitesse de la caméra  
+
+![ParralaxCode.png](Images/ParralaxCode.png)
 
 ---
 
